@@ -1,9 +1,6 @@
-import { useState } from "react";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/admin/dashboard";
 import Profile from "./components/admin/profile";
-
-//import './App.css'
 
 function App() {
   return (
@@ -13,13 +10,12 @@ function App() {
           <div className="loader-fill"></div>
         </div>
       </div>
-      {/* <Router>
-        <Switch>
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/profile" component={Profile} />
-        </Switch>
-      </Router> */}
-      <Dashboard />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </Router>
     </>
   );
 }
