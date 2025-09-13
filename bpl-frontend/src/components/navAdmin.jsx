@@ -45,6 +45,14 @@ export default function NavAdmin() {
                 <span className="pc-mtext">Subjects List</span>
               </Link>
             </li>
+              <li className="pc-item">
+              <Link to="/manageStudents" className="pc-link">
+                <span className="pc-micon">
+                  <i className="ti ti-menu-2"></i>
+                </span>
+                <span className="pc-mtext">Manage Students</span>
+              </Link>
+            </li>
             <li className="pc-item">
               <Link to="/curriculum" className="pc-link">
                 <span className="pc-micon">
